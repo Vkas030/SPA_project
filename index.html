@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>E</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <img src="logoo.jpg" alt="">
+            <div class="navig">
+                <div class="nav-abt"><a href="#about">About</a></div>
+                <div class="nav-cont"><a href="#contactus">Contact</a></div>
+                <div class="nav-serv"><a href="#ourservice">Services</a></div>
+                <div class="nav-serv"><a href="#ourservice">Shop</a></div>
+
+            </div>
+
+            <div class="signin">
+                <a class="btn1" onclick="showModal()">Login</a>
+                <a class="btn2" onclick="showModale()">Register</a>
+            </div>
+        </div>
+        <div class="main-cont">
+            <div class="content">
+                <p1 class="anim1">Relaxation SPA</p1>
+            </div>
+            <div class="content1">
+                <i class="fa-brands fa-sqare-facebook" style="font-size: 50px; color: blue;"></i>
+                <p class="anim">Swedish Massage</p>
+                <p class="anim">Deep Tissue Massage</p>
+                <p class="anim">Pregnancy Massage</p>
+                <p class="anim">Ashiatsu</p>
+                <p class="anim">Hot Stone Massage</p>
+            </div>
+            <div class="anim">
+                <button class="bbtn">Book Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="oberlay" onclick="closeModal()"></div>
+    <div class="loginform">
+        <span class="cross" onclick="closeModal()">&times</span>
+        <form action="">
+            <div>
+                <label>Username</label>
+                <input class="inpt" type="number" />
+            </div>
+            <div>
+                <label>Password</label>
+                <input class="inpt" type="password" />
+            </div>
+            <a class="logbtn1">LOGIN</a>
+        </form>
+    </div>
+
+    <div class="overlay" onclick="removeModale()"></div>
+    <div class="registerform">
+        <span class="crosses" onclick="removeModale()">&times</span>
+        <form action="" target="_blank" class="formrad" method="post">
+            <div>
+                <label for="">Full Name</label>
+                <input class="inpt" type="text" name="fullname" />
+            </div>
+            <div>
+                <label for="">Username</label>
+                <input class="inpt" type="text" name="username" />
+            </div>
+            <div>
+                <label for="">E-mail</label>
+                <input class="inpt" type="email" name="email" />
+            </div>
+            <div>
+                <label for="">Password</label>
+                <input class="inpt" type="password" name="password" />
+            </div>
+            <input type="submit" class="logbtn2">
+        </form>
+    </div>
+
+</body>
+<script>
+    function showModal() {
+        document.querySelector('.oberlay').classList.add('showoberlay');
+        document.querySelector('.loginform').classList.add('showloginform');
+    }
+    function closeModal() {
+        document.querySelector('.oberlay').classList.remove('showoberlay');
+        document.querySelector('.loginform').classList.remove('showloginform');
+    }
+
+</script>
+<script>
+    function showModale() {
+        document.querySelector('.overlay').classList.add('showoverlay');
+        document.querySelector('.registerform').classList.add('showregisterform');
+    }
+    function removeModale() {
+        document.querySelector('.overlay').classList.remove('showoverlay');
+        document.querySelector('.registerform').classList.remove('showregisterform');
+    }
+
+</script>
+<section id="about">
+    <div class="aboutus">
+        <div class="abtcont2">
+            <img src="abt1.jpg" style="width:410px; height: 580px;">
+        </div>
+        <div class="abtcont1">
+            <p class="p1">About Our SPA Centre </p>
+            <p class="abtp2">A SPA is a
+                location where miniral-rich spring water<br>
+                (and sometimes seawater) is used to give medicinal<br>
+                baths.Spa towns or spa resorts (including hot<br>
+                springs resorts) typically offer various health<br>
+                treatments,which are also known as<br>
+                balneotherapy. The belief in the curativr power of<br>
+                mineral water goes back to prehistorical times.<br>
+                Spa towns or spa resorts (including hot<br>
+                springs resorts) typically offer various health<br>
+            </p>
+            <div class="anchar">
+                <a href="" class="non">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contactus">
+    <div class="contactus">
+        <div class="contmain">
+            <h3 class="conthead"> Get in touch with us</h3>
+            <div class="cont-content">
+                <div class="div1">
+                    <div class="phn-logo">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <p style="font-size: 25px; font-weight: 600;">Email</p>
+                    <p style="font-size: 15px;">vkas0080@gmail.com</p>
+                </div>
+                <div class="div2">
+                    <div class="phn-logo">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="phn">
+                        <p style="font-size: 25px; font-weight: 600;">Phone</p>
+                        <p style="font-size: 15px;">+977 9848565421</p>
+                    </div>
+                </div>
+
+                <div class="div3">
+                    <div class="phn-logo">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <p style="font-size: 25px; font-weight: 600;">Address</p>
+                    <p style="font-size: 15px;">putalisadak,kathmandu</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="cont-img-content">
+            <div class="cont-pic">
+            </div>
+            <div class="cont-input">
+                <div class="main-input">
+                    <input class="inpt10" type="text" placeholder="Your Name" />
+                    <input class="inpt10" type="email" placeholder="Your Email" />
+                    <input class="inpt10" type="text" placeholder="Subject" />
+                    <!-- <input type="comment" placeholder="Your Message" /> -->
+                    <textarea placeholder="Your Message" class="inpt13"></textarea>
+                    <input class="inpt14" type="submit" value="Send" placeholder="Send Message">
+                </div>
+            </div>
+        </div>
+
+
+</section>
+<section id="ourservice">
+    <div class="ourservice">
+        <div class="service-head">
+            <h3>Our Services</h3>
+        </div>
+        <div class="service-main">
+
+            <div class="service1">
+                <p class="body1"><u><b>Body Massage</b></u></p>
+                <p class="body2">Sps towns or spa resorts
+                    typically offer <br> various health treatments </p>
+                <p class="body1"><u><b>Sun Bathing</b></u></p>
+                <p class="body2">Sps towns or spa resorts
+                    typically offer <br> various health treatments </p>
+                <p class="body1"><u><b>Foot Massage</b></u></p>
+                <p class="body2">Sps towns or spa resorts
+                    typically offer <br> various health treatments </p>
+                <p class="body1"><u><b>Candel Massage</b></u></p>
+                <p class="body2">Sps towns or spa resorts
+                    typically offer <br> various health treatments </p>
+
+            </div>
+            <div class="logos-head1">
+                <div class="logo-ser-head1">
+                    <div class="logo-ser1"></div>
+                    <div class="logo-ser2"></div>
+                </div>
+                <div class="logo-ser-head2">
+                    <div class="logo-ser3"></div>
+                    <div class="logo-ser4"></div>
+                </div>
+            </div>
+            <div class="service2">
+            </div>
+            <div class="logos-head2">
+                <div class="logo-ser-head1">
+                    <div class="logo-ser5"></div>
+                    <div class="logo-ser6"></div>
+                </div>
+                <div class="logo-ser-head2">
+                    <div class="logo-ser7"></div>
+                    <div class="logo-ser8"></div>
+                </div>
+            </div>
+            <div class="service3">
+                <p class="hot1"><u><b>Hot Stone Massage</b></u></p>
+                <p class="hot2">Spa towns or spa resorts
+                    typically offer<br> various health treatments </p>
+                <p class="hot1"><u><b>Herbal Drinks</b></u></p>
+                <p class="hot2">Spa towns or spa resorts
+                    typically offer<br> various health treatments </p>
+                <p class="hot1"><u><b>Shower</b></u></p>
+                <p class="hot2">Spa towns or spa resorts
+                    typically offer<br> various health treatments </p>
+                <p class="hot1"><u><b>Free Face Mark</b></u></p>
+                <p class="hot2">Spa towns or spa resorts
+                    typically offer<br> various health treatments </p>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="Main-Team">
+    <div class="sub-team">
+        <h3 style="color: #ff8499;">Our Team</h3>
+    </div>
+    <div class="sub-main-team">
+        <div class="team-cen">
+            <div class="subb-team"><img src="nbbn.png" style="border: 1px solid #e2405b;"></div>
+        </div>
+        <div class="team-cen">
+            <div class="subb-team"><img src="suiii.jpg" style="border: 1px solid #e2405b;"></div>
+        </div>
+        <div class="team-cen">
+            <div class="subb-team"><img src="pasuu.jpg" style="border: 1px solid #e2405b;"></div>
+        </div>
+        <div class="team-cen">
+            <div class="subb-team"><img src="niks.jpg" style="border: 1px solid #e2405b;"></div>
+        </div>
+        <div class="team-cen">
+            <div class="subb-team"><img src="bijuli.jpg" style="border: 1px solid #e2405b;"></div>
+        </div>
+
+    </div>
+    <div class="team-txt">
+        <div class="team-txt2">
+            <h2 style="color: #e2405b;">Nabin Pulami</h2>
+            <p>Skin Care Expert</p>
+        </div>
+        <div class="team-txt2">
+            <h2 style="color: #e2405b;">Subarna Khatiwoda</h2>
+            <p>SPA Expert</p>
+        </div>
+        <div class="team-txt2">
+            <h2 style="color: #e2405b;">Ajay Shrestha</h2>
+            <p>Massage Expert</p>
+        </div>
+        <div class="team-txt2">
+            <h2 style="color: #e2405b;">Nikhil Thapa</h2>
+            <p>Manager</p>
+        </div>
+        <div class="team-txt2">
+            <h2 style="color: #e2405b;">Bishal Bishwokarma</h2>
+            <p>Styler</p>
+        </div>
+    </div>
+    <div class="main-hour">
+        <div class="hour">
+            <h2>Hours</h2>
+        </div>
+        <div class="main-sub-hour">
+            <div class="sub-hour"><img src="time1.jpg"></div>
+            <div class="subs-hour">
+                <div class="sun">
+                    <p>Sunday</p>
+                    <P>9:00Am to 9:00Pm</P>
+                </div>
+                <div class="mon">
+                    <p>Monday</p>
+                    <P>9:00Am to 9:00Pm</P>
+                </div>
+                <div class="tue">
+                    <p>Tueday</p>
+                    <P>9:00Am to 7:00Pm</P>
+                </div>
+                <div class="wed">
+                    <p>Wednesday</p>
+                    <P>9:00Am to 7:00Pm</P>
+                </div>
+                <div class="thru">
+                    <p>Thrusday</p>
+                    <P>9:00Am to 7:00Pm</P>
+                </div>
+                <p>
+                <div class="fri">
+                    <p>Friday</p>
+                    <P>9:00Am to 4:00Pm</P>
+                </div>
+                <div class="sat">
+                    <p>Saturday</p>
+                    <P>Closed</P>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="futter0">
+        <i class="fa-solid fa-book"></i>
+        <p>Book Now +977 9848287472</p>
+    </div>
+    <footer>
+        <div class="futter1">
+            <div class="foot-abt">
+                <div class="abt-div">
+                    <div class="abt-border">
+                        <p>About Us</p>
+                    </div>
+                </div>
+                <div class="abt-div2">
+                    <p>Contact us today and we’ll help
+                        you get started.<br> Most people start with an About page
+                        that <br>introduces them to potential site visitors.</p>
+                </div>
+                <div class="abt-log">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-pinterest"></i>
+                </div>
+            </div>
+            <div class="foot-finus">
+                <div class="find-border">
+                    <p>Find Us</p>
+                </div>
+                <div class="find-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.2544190066856!2d85.324
+                05447468713!3d27.709429925401025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19091
+                da0e19b%3A0xc4598923d9d99381!2z4KS44KS_4KSf4KWAIOCkuOClh-CkqOCljeCkn-CksA!5e0!3m2!1sne!2snp!4v
+                1696845810050!5m2!1sne!2snp" width="380" height="200" style="border:0;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="foot-newsla">
+                <div class="foot-border">
+                    <p>Newsletter</p>
+                </div>
+                <div class="foot-para">
+                    <p>Join our mailing list and get your special offers!</p>
+                </div>
+                <div class="foot-button">
+                    <input type="email" placeholder="Enter your email..." required="required">
+                    <button name="Suscribe" type="Submit"><i class="fas fa-paper-plane mr8"></i>
+                        <p>Join Now</p>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <div class="futter2">
+        <div class="first-foot">
+            <p>Copyright © 2023 Xtra Theme. All Rights Reserved.</p>
+        </div>
+        <div class="second-foot">
+            <p>Privacy Policy</p>
+        </div>
+    </div>
+    </body>
+
+</html>
